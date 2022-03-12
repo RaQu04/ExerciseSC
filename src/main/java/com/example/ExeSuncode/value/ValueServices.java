@@ -41,4 +41,18 @@ public class ValueServices {
     public List<ValueEntity> getDuplicateColumn4() {
         return valueRepo.duplikatKolumna4();
     }
+
+
+    public List<ValueEntity> getUniqueColumn1() {
+        return valueRepo.unikalnaKolumna1();
+    }
+    public List<ValueEntity> getUniqueColumn2() {
+        return valueRepo.unikalnaKolumna2();
+    }
+    public List<ValueEntity> getUniqueColumn3() {
+        return valueRepo.unikalnaKolumna3();
+    }
+    public List<ValueEntity> getUniqueColumn4() {
+        return valueRepo.unikalnaKolumna4();
+    }
 }

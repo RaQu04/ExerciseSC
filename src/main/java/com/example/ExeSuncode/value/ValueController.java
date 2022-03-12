@@ -43,4 +43,21 @@ public class ValueController {
     public List<ValueEntity> getDuplicateFromColumn4(){
         return valueServices.getDuplicateColumn4();
     }
+
+    @GetMapping("/uniqecolumn1")
+    public List<ValueEntity> getUniqueFromColumn1(){
+        return valueServices.getUniqueColumn1();
+    }
+    @GetMapping("/uniqecolumn2")
+    public List<ValueEntity> getUniqueFromColumn2(){
+        return valueServices.getUniqueColumn2();
+    }
+    @GetMapping("/uniqecolumn3")
+    public List<ValueEntity> getUniqueFromColumn3(){
+        return valueServices.getUniqueColumn3();
+    }
+    @GetMapping("/uniqecolumn4")
+    public List<ValueEntity> getUniqueFromColumn4(){
+        return valueServices.getUniqueColumn4();
+    }
 }
