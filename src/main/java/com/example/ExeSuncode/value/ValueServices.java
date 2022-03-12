@@ -27,18 +27,18 @@ public class ValueServices {
     }
 
     public List<ValueEntity> getDuplicateColumn1() {
-       return valueRepo.kolumna1();
+       return valueRepo.duplikatKolumna1();
     }
 
     public List<ValueEntity> getDuplicateColumn2() {
-        return valueRepo.kolumna2();
+        return valueRepo.duplikatKolumna2();
     }
 
     public List<ValueEntity> getDuplicateColumn3() {
-        return valueRepo.kolumna3();
+        return valueRepo.duplikatKolumna3();
     }
 
     public List<ValueEntity> getDuplicateColumn4() {
-        return valueRepo.kolumna4();
+        return valueRepo.duplikatKolumna4();
     }
 }
