@@ -26,4 +26,21 @@ public class ValueController {
     public Optional<ValueEntity> getValueById(@PathVariable Long id){
         return valueServices.getValueById(id);
     }
+
+    @GetMapping("/column1")
+    public List<ValueEntity> getDuplicateFromColumn1(){
+        return valueServices.getDuplicateColumn1();
+    }
+    @GetMapping("/column2")
+    public List<ValueEntity> getDuplicateFromColumn2(){
+        return valueServices.getDuplicateColumn2();
+    }
+    @GetMapping("/column3")
+    public List<ValueEntity> getDuplicateFromColumn3(){
+        return valueServices.getDuplicateColumn3();
+    }
+    @GetMapping("/column4")
+    public List<ValueEntity> getDuplicateFromColumn4(){
+        return valueServices.getDuplicateColumn4();
+    }
 }
