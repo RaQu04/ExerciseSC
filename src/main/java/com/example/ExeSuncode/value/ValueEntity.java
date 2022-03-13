@@ -28,4 +28,15 @@ public class ValueEntity {
         this.kolumna3 = kolumna3;
         this.kolumna4 = kolumna4;
     }
+
+    @Override
+    public String toString() {
+        return "ValueEntity{" +
+                "id=" + id +
+                ", kolumna1='" + kolumna1 + '\'' +
+                ", kolumna2='" + kolumna2 + '\'' +
+                ", kolumna3='" + kolumna3 + '\'' +
+                ", kolumna4='" + kolumna4 + '\'' +
+                '}';
+    }
 }
