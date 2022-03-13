@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { MenuComponent } from './menu/menu.component';
 import { ViewComponent } from './view/view.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ValueService } from './value/value.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -19,9 +24,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    MatMenuModule
   ],
-  providers: [ValueService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
